@@ -3,7 +3,6 @@
 
 using std::cout; // Print to screen
 using std::cin;	 // Get input from keyboard
-using std::string; // Memory for a sentence
 
 int sanity = 0; //When hits 0, player nuetral. Mental Health.
 int health; //0-100. When hits 0, player dies. Physical Health. 
