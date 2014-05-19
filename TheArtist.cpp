@@ -40,8 +40,15 @@ void ClearScreen()
 
 void MenuScreen()
 {
-	cout << "The Artist - By Harrison Robottom and Robert Walker\n\n"; // Display game title and author
-	cout << "1. Play game\t0. Exit";		 // Display Game Options
+	cout << "**********************************************************\n"; // Display game title and author
+	cout << "*			The Artist                        *\n";
+	cout << "*							  *\n";
+	cout << "*          By Harrison Robottom and Robert Walker        *\n"; 
+	cout << "*                                                        *\n";
+	cout << "*          1. Play game                   0. Exit        *\n";
+	cout << "**********************************************************\n\n";
+	
+	// Display Game Options
 
 	switch(GetChoice(2))
 	{
