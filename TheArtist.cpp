@@ -5,13 +5,13 @@ using std::cout; // Print to screen
 using std::cin;	 // Get input from keyboard
 using std::string; // Memory for a sentence
 
-int sanity = 0; //Mental Health. When hits 0, player neutral. > 0 positive mentality. < 0 negative mentality 
+int sanity = 0; //Mental Health. When hits 0, player nuetral. > 0 positive mentality. < 0 negative mentality 
 int GetChoice(int Number);
 
 bool ValidChoice;
 bool GameActive; // A switch ( 0, 1, true or false ) to represent the game state
 
-void ClearScreen(); // Clears Screen.
+void ClearScreen(); // CLears Screen.
 void MenuScreen(); // A Function to show the Menu screen
 void Intro();
 void StartGame();
@@ -40,15 +40,8 @@ void ClearScreen()
 
 void MenuScreen()
 {
-	cout << "**********************************************************\n"; // Display game title and author
-	cout << "*			The Artist                        *\n";
-	cout << "*							  *\n";
-	cout << "*          By Harrison Robottom and Robert Walker        *\n"; 
-	cout << "*                                                        *\n";
-	cout << "*          1. Play game                   0. Exit        *\n";
-	cout << "**********************************************************\n\n";
-	
-	// Display Game Options
+	cout << "The Artist - By Harrison Robottom and Robert Walker\n\n"; // Display game title and author
+	cout << "1. Play game\t0. Exit";		 // Display Game Options
 
 	switch(GetChoice(2))
 	{
@@ -184,7 +177,11 @@ void StartGame()
 		case 2: // Where am I?
 			cout << "\n\nDaniel: Where am I? What is this place?";
 			cin.get();
-			cout << "\nVirgil: ";
+			cout << "\nVirgil: This is where you will find yourself. What do you think makes a man?";
+			cin.get();
+			cout << "\nDaniel: His deeds?";
+			cin.get();
+			cout << "\nVirgil: Exactly. You're here to learn your memoreis... and to learn from them."
 			break;
 		}
 		break;
@@ -196,9 +193,9 @@ void StartGame()
 		
 		switch(GetChoice(3)) // Virgil follows you
 		{
-		case 0: // Harsh Grip
+		case 0: // Abusive Grip
 			break;
-		case 1: // Dunno
+		case 1: // I don't know
 			break;
 		case 2: // Helping hand
 			break;
