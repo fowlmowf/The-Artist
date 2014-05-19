@@ -5,13 +5,13 @@ using std::cout; // Print to screen
 using std::cin;	 // Get input from keyboard
 using std::string; // Memory for a sentence
 
-int sanity = 0; //Mental Health. When hits 0, player nuetral. > 0 positive mentality. < 0 negative mentality 
+int sanity = 0; //Mental Health. When hits 0, player neutral. > 0 positive mentality. < 0 negative mentality 
 int GetChoice(int Number);
 
 bool ValidChoice;
 bool GameActive; // A switch ( 0, 1, true or false ) to represent the game state
 
-void ClearScreen(); // CLears Screen.
+void ClearScreen(); // Clears Screen.
 void MenuScreen(); // A Function to show the Menu screen
 void Intro();
 void StartGame();
